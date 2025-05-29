@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Painel IPTV</title>
+  <link rel="stylesheet" href="painel.css" />
+</head>
+<body>
+  <div class="login-container">
+    <form class="login-box" onsubmit="login(event)">
+      <h2>Painel IPTV</h2>
+      <input type="text" id="loginUser" placeholder="Usuário" required />
+      <input type="password" id="loginPass" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+  <script>
+    const logins = {
+      silverfb13: "lfbs1706",
+      Aldemir: "admin"
+    };
+    function login(e) {
+      e.preventDefault();
+      const u = document.getElementById("loginUser").value;
+      const p = document.getElementById("loginPass").value;
+      if (logins[u] === p) {
+        sessionStorage.setItem("auth", "ok");
+        location.href = "dashboard.html";
+      } else {
+        alert("Login ou senha incorretos");
+      }
+    }
+  </script>
+</body>
+</html>
