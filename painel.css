@@ -1,0 +1,44 @@
+body {
+  background: #f2f4f8;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+.login-container, .painel-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+.login-box h2, .painel-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.login-box input, .login-box button, .form input, .form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #084298;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
