@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel IPTV</title>
+  <link rel="stylesheet" href="painel.css" />
+</head>
+<body>
+  <div class="painel-container">
+    <h2>Painel IPTV</h2>
+    <div class="form">
+      <input type="text" id="newUser" placeholder="Novo usuário" />
+      <input type="password" id="newPass" placeholder="Senha" />
+      <button onclick="adicionarUsuario()">Adicionar</button>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Usuário</th><th>Senha</th><th>Ações</th></tr>
+      </thead>
+      <tbody id="tabelaUsuarios"><tr><td colspan="3">Carregando...</td></tr></tbody>
+    </table>
+    <button onclick="logout()">Sair</button>
+  </div>
+  <script src="painel.js"></script>
+</body>
+</html>
